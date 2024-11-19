@@ -14,6 +14,9 @@ class Animal:
     def eat(self):
         return f"The {self.species} is eating."
 
+    def sleep(self):
+        return f"The {self.species} is sleeping."
+
     def __str__(self):
         return f"{self.species}, Age: {self.age}, Color: {self.color}, Habitat: {self.habitat}"
 

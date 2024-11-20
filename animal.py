@@ -14,6 +14,15 @@ class Animal:
     def eat(self):
         return f"The {self.species} is eating."
 
+    def sleep(self):
+        return f"The {self.species} is sleeping."
+
+    def drink(self):
+        return f"The {self.species} is drinking."
+
+    def breathe(self):
+        return f"The {self.species} is breathing."
+
     def __str__(self):
         return f"{self.species}, Age: {self.age}, Color: {self.color}, Habitat: {self.habitat}"
 
@@ -42,12 +51,36 @@ class Cat(Animal):
     def sound(self):
         return "The Cat meows."
 
+class Bird(Animal):
+    def  __init__(self, age, color, type,  breed):
+         super().__init__("Bird", age, color, "Wild") 
 
+    def move(self):
+         return "The Bird is flying."
+
+    def sound(self):
+        return "The Bird chirps."
+
+class Fish(Animal):
+    def  __init__(self, age, color, type,  breed):
+         super().__init__("Fish", age, color, "Freshwater") 
+
+    def move(self):
+         return "The Fish is swimming."
+   
+    def sound(self):
+        return "The Fish is glubing."
+    
+    def breathe(self):
+        return "The Fish uses its gills to breathe."
+        
 def main():
     animals = [
         Dog(5, "Brown", "Golden Retriever"),
         Cat(2, "White"),
-        Tiger(4, "Orange")
+        Tiger(4, "Orange"),
+        Bird(2,"Gray"),
+        Fish(3,"Red")
     ]
 
     for animal in animals:

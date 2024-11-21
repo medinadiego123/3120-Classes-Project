@@ -5,4 +5,4 @@ class Cat(Animal):
         super().__init__("Cat", age, color, "Domestic")
 
     def sound(self):
-        return "The Cat meows."
+        return "The Cat meows." 

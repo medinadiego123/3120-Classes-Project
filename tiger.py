@@ -6,3 +6,6 @@ class Tiger(Animal):
 
     def sound(self):
         return "The Tiger roars."
+
+    def move(self):
+        return "The Tiger is running."
